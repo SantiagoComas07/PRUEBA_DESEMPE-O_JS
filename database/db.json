@@ -1,0 +1,25 @@
+{
+
+"usuarios":[
+
+{
+    "id": 1,
+    "nombre": "Juan Perez",
+    "email": "juanp@gmail.com"
+
+}
+
+],
+
+"eventos":[
+
+
+],
+
+"reservas": [
+
+
+]
+
+
+}

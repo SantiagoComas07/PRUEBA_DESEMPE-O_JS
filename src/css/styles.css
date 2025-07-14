@@ -1,0 +1,113 @@
+@import url(./login.css);
+@import url(./register.css);
+@import url(./products.css);
+@import url(./404.css);
+
+
+*{
+box-sizing: border-box;
+
+}
+
+
+
+body{
+
+margin:0;
+padding: 0;
+
+}
+
+
+
+:root{
+--color_N1: #8cc751;
+--color_N2: #D0F0C0;
+--border_R1: 0.2rem;
+
+
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 1rem 2rem;
+  background-color: var(--color_N1);
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+
+
+.header nav{
+
+width: 100%;
+justify-content: space-around;
+
+}
+
+.menu{
+    width: 30%;
+    gap: 5%;
+    margin:0;
+    padding: 0;
+    display:flex;
+
+
+}
+
+
+.menu li{
+
+    list-style: none;
+}
+
+.menu li a{
+text-decoration: none;
+color:var(--color_N2);
+font-weight: bold;
+padding: 1rem;
+background-color: var(--color_N1);
+}
+
+
+.menu li a:hover{
+color: var(--color_N1);
+background-color: var(--color_N2);
+border-radius: var(--border_R1);
+ }
+
+
+ .logo-box{
+
+    width: 4.5rem;
+    background-color: var(--color_N2);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--border_R1);
+
+ }
+
+ .logo-box img{
+
+    width: 100%;
+
+ }
+
+
+ .logoComplete{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+ }
+
+ .logoComplete h1{
+
+color:var(--color_N2);
+
+ }

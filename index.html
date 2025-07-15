@@ -3,33 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="./src/css/styles.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <ul class="menu" id="menu">
-          <li><a href="/login">Sign in</a></li>
-          <li><a href="/register">Register</a></li>
-        </ul>
-      </nav>
+    <nav class="header">
       <div class="logoComplete">
-        <h1>EventDate</h1>
-        <figure class="logo-box">
-          <img src="public/img/evento.png" alt="Logo de evento">
-        </figure>
+        <div class="logo-box">
+          <img src="public/img/evento.png" alt="Logo">
+        </div>
+        <h1><a href="/" data-link>eventDate</a></h1>
       </div>
-    </header>
-    <div id="app">
-
-    </div>
-    <!-- usuarios eventos y resservas 
-     uno para subir asistentes y bajar el asistentes -->
-    <script type="module" src="/src/main.js"></script>
+      <ul class="menu">
+        <li><a href="/login" data-link>Login</a></li>
+        <li><a href="/register" data-link>Register</a></li>
+      </ul>
+    </nav>
+    <main>
+       <div id="app">
+        <!-- contenido a mostrar -->
+  </div>
+    </main>
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
+
+

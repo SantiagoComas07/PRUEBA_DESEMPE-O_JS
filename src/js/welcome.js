@@ -1,8 +1,10 @@
 
-
+// Here I can render the view in HTML
 export function renderWelcome(){
 
-    return `<p>Foto de un perrito</p>`
+    return `    <figure class="welcome-image-box">
+      <img src="/public/img/chairs.jpg" alt="Welcome Image" class="welcome-image">
+    </figure>`
 
 
 }

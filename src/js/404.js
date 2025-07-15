@@ -1,6 +1,6 @@
 
 
-
+// Here I can render the view in HTML, This case is when the page cannot be found.
 export function notFound() {
     return `
         <div class="not-found">

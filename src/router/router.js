@@ -3,8 +3,10 @@
  import {renderWelcome} from "../js/welcome.js";
  import {renderRegister} from "../js/register.js";
  import { notFound } from "../js/404.js";
- // import {Auth} from "../js/auth";
+ 
 
+
+ //Here i try to organize the routes
 const routes ={
 "/": {showView: renderWelcome(),
     afterRender: "settingsWelcome",
@@ -25,23 +27,24 @@ const routes ={
 }
 }
 
-// export function router(){
-//  const path = window.location.pathname || "/";
-//  console.log(path);
-//  const app = document.getElementById("app");
+ export function router(){
+  const path = window.location.pathname || "/";
+  // Path is important to navegate on the page
+  console.log(path);
+  const app = document.getElementById("app");
 
-//  const currentRoute = routes[path];
-//  console.log("Current route", currentRoute)
+  const currentRoute = routes[path];
+  console.log("Current route", currentRoute)
 
-//     if(currentRoute){
-//             app.innerHTML= currentRoute.showView;
-//             if(typeof currentRoute.afterRender == 'function'){
-//                 currentRoute.afterRender()
-//             }
-//     }else{
-//         app.innerHTML=notFound(); 
+     if(currentRoute){
+             app.innerHTML= currentRoute.showView;
+             if(typeof currentRoute.afterRender == 'function'){
+                 currentRoute.afterRender()
+             }
+     }else{
+         app.innerHTML=notFound(); 
 
-//     }
+     }
 
 
-// }
+ }

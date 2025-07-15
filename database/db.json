@@ -1,25 +1,40 @@
 {
-
-"usuarios":[
-
-{
-    "id": 1,
-    "nombre": "Juan Perez",
-    "email": "juanp@gmail.com"
-
-}
-
-],
-
-"eventos":[
-
-
-],
-
-"reservas": [
-
-
-]
-
-
+  "users": [
+    {
+      "id": 1,
+      "name": "Juan Perez",
+      "place": "juanp@gmail.com",
+      "password": "juan123",
+      "rol": "user"
+    },
+    {
+      "id": 2,
+      "nombre": "Sandra",
+      "place": "sandra@gmail.com",
+      "password": "sandra234",
+      "rol": "admin"
+    },
+    {
+      "id": 3,
+      "name": "Santiago",
+      "place": "san@gmail.com",
+      "password": "san123",
+      "rol": "user"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Javascript",
+      "place": "Parque alegra",
+      "password": "sandra234"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "name": "Juan Perez",
+      "email": "juanp@gmail.com"
+    }
+  ]
 }

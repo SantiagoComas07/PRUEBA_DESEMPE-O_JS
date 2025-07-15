@@ -19,95 +19,208 @@ padding: 0;
 }
 
 
+:root {
+   --color_N1: #8cc751;
+   --color_N2: #D0F0C0;
+   --color_N3: #355E3B;
+   --border_R1: 0.2rem;
+ }
+ 
+ .header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 4rem;
+   padding: 1rem 2rem;
+   background-color: var(--color_N1);
+   font-family: "Arial", sans-serif;
+ }
+ 
+ .header .logoComplete {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .logo-box {
+   width: 4.5rem;
+   background-color: var(--color_N2);
+   padding: 0.2rem 0.5rem;
+   border-radius: var(--border_R1);
+ }
+ 
+ .logo-box img {
+   width: 100%;
+ }
+ 
+ .logoComplete h1 a {
+   text-decoration: none;
+   color: var(--color_N2);
+   margin-left: 1rem;
+   font-size: 1.5rem;
+ }
+ 
+ .menu {
+   display: flex;
+   gap: 1rem;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .menu li a {
+   text-decoration: none;
+   color: var(--color_N2);
+   font-weight: bold;
+   padding: 0.5rem 1rem;
+   background-color: var(--color_N1);
+   border-radius: var(--border_R1);
+   transition: all 0.3s ease;
+ }
+ 
+ .menu li a:hover {
+   color: var(--color_N1);
+   background-color: var(--color_N2);
+ }
 
-:root{
---color_N1: #8cc751;
---color_N2: #D0F0C0;
---border_R1: 0.2rem;
-
-
-}
-
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 4rem;
-    padding: 1rem 2rem;
-  background-color: var(--color_N1);
-  font-family: "Winky Rough", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  
-}
-
-
-.header nav{
-
-width: 100%;
-justify-content: space-around;
-
-}
-
-.menu{
-    width: 30%;
-    gap: 5%;
-    margin:0;
-    padding: 0;
-    display:flex;
-
-
-}
-
-
-.menu li{
-
-    list-style: none;
-}
-
-.menu li a{
-text-decoration: none;
-color:var(--color_N2);
-font-weight: bold;
-padding: 1rem;
-background-color: var(--color_N1);
-}
-
-
-.menu li a:hover{
-color: var(--color_N1);
-background-color: var(--color_N2);
-border-radius: var(--border_R1);
+ .welcome-image-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 2rem auto;
+   max-width: 80%; 
+   border: 0.2rem solid var(--color_N1);
+   border-radius: var(--border_R1);
+   overflow: hidden; 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+ }
+ 
+ .welcome-image {
+   width: 100%; 
+   height: auto; 
+   object-fit: cover; 
  }
 
 
- .logo-box{
+/* 
 
-    width: 4.5rem;
-    background-color: var(--color_N2);
-    padding: 0.2rem 0.5rem;
-    border-radius: var(--border_R1);
+ Login */
 
+ .container {
+   max-width: 400px;
+   margin: 2rem auto;
+   padding: 2rem;
+   background-color: var(--color_N2);
+   border-radius: var(--border_R1);
+   text-align: center;
+ }
+ 
+ .container h2 {
+   color: var(--color_N3);
+   margin-bottom: 1.5rem;
+ }
+ 
+ #login-form {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+ }
+ 
+ #login-form input {
+   padding: 0.8rem;
+   border: 1px solid var(--color_N1);
+   border-radius: var(--border_R1);
+   font-size: 1rem;
+ }
+ 
+ #login-form button {
+   padding: 0.8rem;
+   background-color: var(--color_N1);
+   color: var(--color_N2);
+   border: none;
+   border-radius: var(--border_R1);
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
  }
 
- .logo-box img{
+ 
+ .container p {
+   margin-top: 1rem;
+ }
+ 
+ .container p a {
+   color: var(--color_N3);
+   text-decoration: none;
+   font-weight: bold;
+ }
+ 
+ 
+ .container .volver {
 
-    width: 100%;
-
+   margin-top: 1rem;
+   color: var(--color_N3);
+   text-decoration: none;
+   font-size: 0.9rem;
+ }
+ 
+ .container .volver:hover {
+   cursor: pointer;
  }
 
 
- .logoComplete{
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+/* Register */
 
- }
 
- .logoComplete h1{
+#registerForm{
+   max-width: 400px;
+   margin: 2rem auto;
+   padding: 2rem;
+   background-color: var(--color_N2);
+   border-radius: var(--border_R1);
+   text-align: center;
+   
+   
+}
 
-color:var(--color_N2);
+
+#registerForm h1{
+   color: var(--color_N3);
+   margin-bottom: 1.5rem;
+
+}
+
+
+
+#registerForm button{
+
+   padding: 0.8rem;
+   background-color: var(--color_N1);
+   color: var(--color_N2);
+   border: none;
+   border-radius: var(--border_R1);
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+
+}
+
+
+
+ /* NOT-FOUND */
+
+
+.not-found{
+
+   text-align: center;
+}
+
+
+ .not-found h1{
+
+font-size:2rem;
+color: var(--color_N3);
+background-color: #8cc751;
+padding:2rem;
 
  }
